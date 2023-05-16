@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Book.module.scss";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping, faStar } from "@fortawesome/free-solid-svg-icons";
 
-function Book({ img, name, rating, sold, price, discount }) {
+function Book({ img, name, rating, sold, originalPrice, salePrice }) {
     return (
         <div className={styles.wrapper}>
             <a href="/">
@@ -19,13 +19,18 @@ function Book({ img, name, rating, sold, price, discount }) {
                         <div className={styles.sold}>{sold}</div>
                     </div>
                     <div className={styles.priceAndDiscount}>
-                        <div className={styles.price}>
-                            {price}
-                            <sup> ₫</sup>
+                        <div className={styles.salePrice}>{`${salePrice} ₫`}</div>
+                        <div className={styles.originalPrice}>
+                            <span>{salePrice < originalPrice ? `${originalPrice} ₫` : ""}</span>
                         </div>
-                        <div className={styles.discount}>
-                            <span>{(discount > 0) ? `${discount} %` : ''}</span>
-                        </div>
+                    </div>
+                </div>
+                <div className={styles.addToCart}>
+                    <div className={styles.popper}>
+                        <a href="/">
+                            <FontAwesomeIcon icon={faCartShopping} size="1x" />
+                            <span>Thêm Vào Giỏ</span>
+                        </a>
                     </div>
                 </div>
             </a>

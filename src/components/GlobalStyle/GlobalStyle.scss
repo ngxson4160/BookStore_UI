@@ -1,5 +1,5 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -11,6 +11,7 @@
     --lightBlue: rgba(10, 104, 255, 0.2);;
     --darkBlue: rgba(10, 104, 255, 0.4);
     --bluePrimary: rgb(10, 104, 255);
+    
     --darkGrey: rgb(128, 128, 137);
     --lightGrey: rgba(39, 39, 42, 0.12);
     --mediumGrey: rgba(39, 39, 42, 0.24);

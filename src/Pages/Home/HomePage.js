@@ -8,309 +8,309 @@ function HomePage() {
         <DefaultLayout>
             <div className={styles.wrapper}>
                 <h2 className={styles.heading}>Tất Cả Sản Phẩm</h2>
-                <Sorter></Sorter>
+                <Sorter currentPage = '1' amountPage = '5'/>
                 <div className = {styles.listProduct}>
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
-                        discount = '20'
+                        salePrice = '68.500'
+                        originalPrice = '99.000'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
                     <Book
                         img = 'https://salt.tikicdn.com/cache/750x750/ts/product/65/74/fb/1e6ca7a2fa28d83667a8e50144e43d0d.jpg.webp'
                         name = 'Bắt Trẻ Đồng Xanh (Tái Bản 2020)'
                         rating = '4.8'
                         sold = '5000+'
-                        price = '68.500'
+                        salePrice = '68.500'
                     />
 
                 </div>

@@ -3,7 +3,17 @@
     background-color: white;
     border-radius: 4px;
     overflow: hidden;
-    
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0 0 20px;
+        // opacity: 0.75;
+        // background-color: rgba(0, 0, 0, 0.09);
+    }
+
+    &:hover .popper{
+        display: block;
+    }
+
     a {
         text-decoration: none;
     }
@@ -58,11 +68,66 @@
 
     .priceAndDiscount {
         display: flex;
-        color: black;
-        font-weight: 500;
+        
+        .salePrice {
+            color: red;
 
-        .discount {
-            text-align: end;
+            font-weight: 400;
         }
+
+        .originalPrice {
+            align-self: center;
+            margin-left: 5px;
+            font-size: var(--sizeText14);
+            color: var(--darkGrey);
+            text-decoration: line-through;
+        }
+    }
+}
+
+.addToCart {
+    position: relative;
+    
+    .popper {
+        display: none;
+        height: 40px;
+        position: absolute;
+        top: -60px; 
+        left: 20px; 
+        right:20px;
+        border-radius: 10px;
+        background-color: rgba(10, 104, 255, 0.8);;
+        animation-duration: 0.25s;
+        animation-name: slide-up;
+        animation-fill-mode: forwards;
+        overflow:hidden;
+
+    }
+
+    a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 300;
+        
+        span {
+            margin-left: 7.5px;
+        }
+
+        &:hover {
+        font-weight: 500;
+        background-color: rgba(10, 104, 255, 0.9);
+        }
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(25%);
+    }
+    to {
+        transform: translateY(0%);
     }
 }

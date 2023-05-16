@@ -4,6 +4,8 @@
     padding: 12px 0;
     margin: 0 0 8px 0;
     background-color: white;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sorter {
@@ -46,4 +48,48 @@
             border-radius: 2px;
         }
     }
+}
+
+.navigate {
+    margin-right: 16px;
+    display: flex;
+    font-size: var(--sizeText16);
+    text-align: left;
+    align-items: center;
+
+    .paging {
+        margin-right: 16px;
+        
+        .current {
+            color: var(--bluePrimary)
+        }
+    }
+
+    .arrow {
+        font-size: 20px;
+        display: flex;
+        
+        .arrowLeft {
+            display:block;
+            font-weight: 300;
+            margin-right: 8px;
+        }
+
+        .arrowRight {
+            display:block;
+            font-weight: 300;
+            margin-right: 8px;
+        }
+
+        .arrowEnabel {
+            cursor: pointer;
+            color: black;
+        }
+
+        .arrowDisable {
+            cursor: default;
+            color: var(--darkGrey);
+        }
+    }
+
 }
