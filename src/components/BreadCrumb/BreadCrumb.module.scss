@@ -1,0 +1,28 @@
+
+.wrapper {
+    height: 45px;
+    
+    .breadBrumb {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: var(--darkGrey);
+            font-size: var(--sizeText14);
+
+            &:hover {
+                text-decoration: underline;
+                color: black;
+            }
+        }
+
+        .icon {
+            padding: 4px;
+            color: var(--darkGrey)
+        }
+
+    }
+
+}

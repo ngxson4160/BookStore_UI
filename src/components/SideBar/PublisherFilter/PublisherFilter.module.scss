@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.toggler {
+    color: var(--bluePrimary);
+    font-size: var(--sizeText14);
+    text-align: start;
+    cursor: pointer;
+}
+.icon {
+    margin-left: 5px;
+    font-weight: 700;
+}

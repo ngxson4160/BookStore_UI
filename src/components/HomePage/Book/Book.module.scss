@@ -1,0 +1,68 @@
+.wrapper {
+    max-width: 200.68px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    
+    a {
+        text-decoration: none;
+    }
+}
+
+.thumbNail {
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+    }
+}
+
+.info {
+    text-align: start;
+    padding: 8px 0;
+    margin: 0 12px;
+    h3 {
+        color: black;
+        font-size: var(--sizeText12);
+        font-weight: 300;
+    }
+    
+    .fullRating {
+        display: flex;
+        font-size: var(--sizeText12);
+        color: var(--darkGrey)
+    }
+
+    .star {
+        margin-left: 2px;
+        color: var(--yellow);
+        transition: (-50%);
+    }
+
+    .sold {
+        padding-left: 10px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            height: 80%;
+            border-left: 1px solid var(--darkGrey);
+            margin-left: 5px;
+        }
+    }
+
+    .priceAndDiscount {
+        display: flex;
+        color: black;
+        font-weight: 500;
+
+        .discount {
+            text-align: end;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+// .wrapper {
+//     // background-color: var(--backgroundColorWeb);
+// }
+
+.heading {
+    font-weight: 300;
+    padding: 12px 0 0 16px;
+    text-align: start;
+    background-color: white;
+}
+
+.listProduct {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    gap: 8px;
+}

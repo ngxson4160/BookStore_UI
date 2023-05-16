@@ -1,0 +1,18 @@
+.wrapper {
+    // width: 100%;
+    // display: flex;
+    // padding: 0 16px 12px;
+    // flex-direction: column;
+    // border-bottom: 2.5px solid #f5f5fa;
+    text-align: start;
+    font-size: var(--sizeText14);
+    color: var(--darkGrey);
+    
+    .star {
+        color: var(--yellow);
+    }
+
+    span {
+        margin-left: 5px;
+    }
+}

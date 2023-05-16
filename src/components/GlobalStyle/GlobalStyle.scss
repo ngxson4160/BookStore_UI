@@ -1,0 +1,41 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding : 0;
+}
+
+:root {
+    --lightBlue: rgba(10, 104, 255, 0.2);;
+    --darkBlue: rgba(10, 104, 255, 0.4);
+    --bluePrimary: rgb(10, 104, 255);
+    --darkGrey: rgb(128, 128, 137);
+    --lightGrey: rgba(39, 39, 42, 0.12);
+    --mediumGrey: rgba(39, 39, 42, 0.24);
+    --yellow: rgb(253, 216, 54);
+    --backgroundColorWeb: #f5f5fa;
+
+    --sizeText20: 2rem;
+    --sizeText16: 1.6rem;
+    --sizeText14: 1.4rem;
+    --sizeText12: 1.2rem;
+    --text: 1.2rem;
+
+    --heightHeader: 72px;
+    --widthWebsite: 1240px;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: 300;
+    background-color: var(--backgroundColorWeb);
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}

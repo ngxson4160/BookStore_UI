@@ -1,0 +1,19 @@
+.checkboxItem {
+    width: fit-content;
+    display: flex;
+    padding: 0 0 12px;
+    line-height: 1.6rem;
+    font-size: var(--sizeText14);
+    color: var(--darkGrey);
+    text-align: start;
+
+    input {
+        margin-right: 7.5px;
+        color:green;
+        cursor: pointer;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

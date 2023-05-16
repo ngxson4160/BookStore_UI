@@ -1,0 +1,24 @@
+.wrapper {
+    margin: auto;
+    width: var(--widthWebsite);
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .sideBar {
+        flex-basis: 16%;
+        background-color: white;
+        border-radius: 4px 0px 0px 4px;
+    }
+    
+    .inner {
+        flex-basis: 83.5%;
+        // background-color: white;
+        background-color: var(--backgroundColorWeb);
+        border-radius: 0px 4px 4px 0px;
+    }
+}
