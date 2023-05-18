@@ -25,15 +25,15 @@ function Book({ img, name, rating, sold, originalPrice, salePrice }) {
                         </div>
                     </div>
                 </div>
-                <div className={styles.addToCart}>
-                    <div className={styles.popper}>
-                        <a href="/">
-                            <FontAwesomeIcon icon={faCartShopping} size="1x" />
-                            <span>Thêm Vào Giỏ</span>
-                        </a>
-                    </div>
-                </div>
             </a>
+            <div className={styles.addToCart}>
+                <div className={styles.popper}>
+                    <a href="/">
+                        <FontAwesomeIcon icon={faCartShopping} size="1x" />
+                        <span>Thêm Vào Giỏ</span>
+                    </a>
+                </div>
+            </div>
         </div>
     );
 }

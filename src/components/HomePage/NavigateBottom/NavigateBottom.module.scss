@@ -1,0 +1,35 @@
+.wrapper{
+    margin: 72px 0 16px;
+}
+
+.navigate {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 16px;
+
+    .link {
+        --height: 36px;
+        width: 40px;
+        height: var(--height);
+        display: block;
+        text-decoration: none;
+        color: var(--darkGrey);
+        text-align: center;
+        line-height: var(--height);
+        border-radius: 4px;
+        font-size: var(--sizeText16);
+        font-weight: 400;
+        
+        &:hover{
+            background-color: var(--lightBlue);
+        }
+    }
+    
+    .active {
+        background-color: var(--bluePrimary);
+        color: white;
+        font-weight: 500;
+
+    }
+}
