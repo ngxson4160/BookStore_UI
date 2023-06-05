@@ -1,8 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Book.module.scss";
 import { faCartShopping, faStar } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useRef } from "react";
 
 function Book({ img, name, rating, sold, originalPrice, salePrice }) {
+    let h3Ref = useRef()
+    useEffect(() => {
+        if(h3Ref.current.offsetHeight < h3Ref.current.scrollHeight){
+            let content = h3Ref.current.textContent;
+            while (h3Ref.current.offsetHeight < h3Ref.current.scrollHeight) {
+                content = content.slice(0, -1);
+                h3Ref.current.textContent = content + '...';
+              }
+        }
+    }, []);
     return (
         <div className={styles.wrapper}>
             <a href="/">
@@ -10,13 +21,13 @@ function Book({ img, name, rating, sold, originalPrice, salePrice }) {
                     <img src={img} alt="Book Thumbnail" />
                 </div>
                 <div className={styles.info}>
-                    <h3>{name}</h3>
+                    <h3 className={styles.name} ref={h3Ref}>{name}</h3>
                     <div className={styles.fullRating}>
                         <div className={styles.rating}>
                             <span>{rating}</span>
                             <FontAwesomeIcon className={styles.star} icon={faStar} size="xs"></FontAwesomeIcon>
                         </div>
-                        <div className={styles.sold}>{sold}</div>
+                        <div className={styles.sold}>Đã bán {sold}</div>
                     </div>
                     <div className={styles.priceAndDiscount}>
                         <div className={styles.salePrice}>{`${salePrice} ₫`}</div>

@@ -1,16 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./NavigateBottom.module.scss";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import React, { createElement, useEffect } from "react";
-import ReactDOM from "react-dom/client";
+import React from "react";
 
 
 function NavigateBottom({currentPage, amountPage}) {
-    useEffect(() => {
-        let test = document.querySelector(`#${styles.wrapper}`);
-        console.log(test)
-
-    })
     return (
         <div>
         <div id = {styles.wrapper} className = {styles.wrapper}>

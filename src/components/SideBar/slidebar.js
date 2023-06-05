@@ -2,7 +2,8 @@ import AuthorFilter from "./AuthorFilter/AuthorFilter";
 import PriceFilter from "./PriceFilter/PriceFilter";
 import PublisherFilter from "./PublisherFilter/PublisherFilter";
 import styles from "./sidebar.module.scss";
-import Rating from "./Rating/Rating";
+// import Rating from "./Rating/Rating";
+import Rating from "./Rating/RatingArea";
 
 function SideBar() {
     return (
@@ -21,15 +22,7 @@ function SideBar() {
             </div>
             <div className={styles.filter}>
                 <h4 className={styles.heading}>Đánh giá</h4>
-                <a href="/">
-                    <Rating star="5"></Rating>
-                </a>
-                <a href="/">
-                    <Rating star="4"></Rating>
-                </a>
-                <a href="/">
-                    <Rating star="3"></Rating>
-                </a>
+                <Rating/>
             </div>
             <div className={styles.filter}>
                 <h4 className={styles.heading}>Tác giả</h4>

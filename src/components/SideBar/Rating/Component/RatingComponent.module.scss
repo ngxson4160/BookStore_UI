@@ -1,12 +1,11 @@
 .wrapper {
-    // width: 100%;
-    // display: flex;
-    // padding: 0 16px 12px;
-    // flex-direction: column;
-    // border-bottom: 2.5px solid #f5f5fa;
     text-align: start;
     font-size: var(--sizeText14);
     color: var(--darkGrey);
+
+    &:hover {
+        cursor: pointer;
+    }
     
     .star {
         color: var(--yellow);
@@ -15,4 +14,9 @@
     span {
         margin-left: 5px;
     }
+}
+
+.chose {
+    background-color: var(--lightGrey);
+    border-radius: 4px;
 }

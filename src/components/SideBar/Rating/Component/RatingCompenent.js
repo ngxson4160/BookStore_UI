@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from './Rating.module.scss'
+import styles from './RatingComponent.module.scss'
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 
-function Rating({star}) {
+function Rating({star, choseRating, ref}) {
     useEffect(() => {
         let wrapper = document.querySelector(`.wrapper_star_${star}`);
         let restStarList = wrapper.querySelectorAll(`.star${star} ~ .${styles.star}`);
@@ -11,7 +11,7 @@ function Rating({star}) {
             restStar.classList.remove(`${styles.star}`);
         },)
     });
-    return ( <div className = {`wrapper_star_${star} ${styles.wrapper}`}>
+    return ( <div className = {`wrapper_star_${star} ${styles.wrapper}`} onClick = {choseRating}>
         <FontAwesomeIcon className = {`star1 ${styles.star}`} icon={faStar} />
         <FontAwesomeIcon className = {`star2 ${styles.star}`} icon={faStar} />
         <FontAwesomeIcon className = {`star3 ${styles.star}`} icon={faStar} />
