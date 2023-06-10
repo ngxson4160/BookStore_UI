@@ -1,21 +1,25 @@
 import DefaultLayout from "../../Layout/DefaultLayout";
-import styles from "./HomePage.module.scss";
-import Sorter from "../../components/HomePage/Sort/Sorter";
-import Book from "../../components/HomePage/Book/Book";
-import NavigateBottom from "../../components/HomePage/NavigateBottom/NavigateBottom";
+import styles from "./AllBooks.module.scss";
+import Sorter from "../../components/AllBooks/Sort/Sorter";
+import Book from "../../components/AllBooks/Book/Book";
+import NavigateBottom from "../../components/AllBooks/NavigateBottom/NavigateBottom";
 import bookService from "../../ApiService/BookService";
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Context from "../../StoreState/Context";
 
-function HomePage() {
+function AllBooks() {
     const [listBook, setListBook] = useState([]);
-    const [stateGlobal, ] = useContext(Context);
-    console.log(stateGlobal.price)
+    const [stateGlobal] = useContext(Context);
     useEffect(() => {
         var getListBook = async () => {
             let bookArray;
             try {
-                let result = await bookService.getBook("1", stateGlobal.authorId, stateGlobal.rating, stateGlobal.price);
+                let result = await bookService.getBook(
+                    "1",
+                    stateGlobal.authorId,
+                    stateGlobal.rating,
+                    stateGlobal.price
+                );
                 bookArray = result.data.data.map((element) => {
                     return (
                         <Book
@@ -31,7 +35,7 @@ function HomePage() {
                     );
                 });
             } catch (error) {
-                bookArray = ['Không tìm thấy kết quả phù hợp'];
+                bookArray = ["Không tìm thấy kết quả phù hợp"];
                 console.log(error);
             }
             setListBook(bookArray);
@@ -44,13 +48,11 @@ function HomePage() {
             <div className={styles.wrapper}>
                 <h2 className={styles.heading}>Tất Cả Sản Phẩm</h2>
                 <Sorter currentPage="1" amountPage="5" />
-                <div className={styles.listProduct}>
-                    {listBook}
-                </div>
+                <div className={styles.listProduct}>{listBook}</div>
                 <NavigateBottom amountPage="50"></NavigateBottom>
             </div>
         </DefaultLayout>
     );
 }
 
-export default HomePage;
+export default AllBooks;

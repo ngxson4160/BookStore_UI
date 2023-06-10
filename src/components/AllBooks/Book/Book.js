@@ -24,7 +24,7 @@ function Book({ img, name, rating, sold, originalPrice, salePrice }) {
                     <h3 className={styles.name} ref={h3Ref}>{name}</h3>
                     <div className={styles.fullRating}>
                         <div className={styles.rating}>
-                            <span>{rating}</span>
+                            <span>{rating !== 0 ? rating: 'Chưa có đánh giá'}</span>
                             <FontAwesomeIcon className={styles.star} icon={faStar} size="xs"></FontAwesomeIcon>
                         </div>
                         <div className={styles.sold}>Đã bán {sold}</div>

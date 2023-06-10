@@ -9,6 +9,12 @@ const initState = {
 function reducer(state, action) {
     switch (action.type) {
         case actionType.ADD_AUTHOR_ID:
+            if(!action.payload){
+                return {
+                    ...state,
+                    authorId: "",
+                };
+            }
             return {
                 ...state,
                 authorId:
@@ -30,7 +36,7 @@ function reducer(state, action) {
                 authorId: temp,
             };
         case actionType.ADD_RATING:
-            if (state.rating === action.payload) {
+            if (!action.payload) {
                 return {
                     ...state,
                     rating: "",
@@ -42,7 +48,7 @@ function reducer(state, action) {
                 };
             }
             case actionType.ADD_PRICE:
-                if (state.price === action.payload) {
+                if (!action.payload) {
                     return {
                         ...state,
                         price: "",

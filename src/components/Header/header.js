@@ -5,11 +5,11 @@ import Tippy from "@tippyjs/react/headless";
 import styles from "./header.module.scss";
 import RowLayout from "../RowLayout/RowLayout";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function Header() {
     const [showResultSearch, setShowResultSearch] = useState(true);
     const [showMenuUser, setShowRMenuUser] = useState(false);
-    const [isClick, setClickUser] = useState(false);
-    var test = document.querySelector(`.${styles.user}`);
+    // const [isClick, setClickUser] = useState(false);
     var menuUserHoverIn = () => {
         let userElement = document.querySelector(`.${styles.user}`);
         if (!showMenuUser) {
@@ -27,7 +27,7 @@ function Header() {
             userElement.classList.remove(styles.backgroundColor);
             setShowRMenuUser(!showMenuUser);
         }
-        if (isClick) return false;
+        // if (isClick) return false;
     };
 
     var test2 = function () {
@@ -49,8 +49,8 @@ function Header() {
                             render={(attrs) => (
                                 <div style={{ width: "100%" }}>
                                     <RowLayout setBorderRadius="0" setWidth="940px" tabIndex="-1" {...attrs}>
-                                        {/* <a className={styles.linkItem} href="http://localhost:3000/">fsads</a>  */}
-                                        <a className={styles.linkItem} href="http://localhost:3000/">
+                                        {/* <a className={styles.linkItem} href="http://localhost:3001/">fsads</a>  */}
+                                        <a className={styles.linkItem} href="http://localhost:3001/">
                                             sfasfd
                                         </a>
                                     </RowLayout>
@@ -71,30 +71,30 @@ function Header() {
                     </div>
                 </div>
                 <div className={styles.navArea}>
-                    <a href="http://localhost:3000/" className={styles.navInner}>
+                    <a href="http://localhost:3001/" className={styles.navInner}>
                         <FontAwesomeIcon icon={faHouse} size="xl" />
                         <span>Trang chủ</span>
-                        {/* <a href="http://localhost:3000/">Trang chủ</a> */}
+                        {/* <a href="http://localhost:3001/">Trang chủ</a> */}
                     </a>
                     <Tippy
                         render={(attrs) => (
-                            <RowLayout tabIndex="-1" {...attrs}>
-                                <a className={styles.linkItem} href="http://localhost:3000/">
+                            <div className={styles.userMenu} tabIndex="-1" {...attrs}>
+                                <Link className={styles.linkItem} to="http://localhost:3001/">
                                     Thông tin tài khoản
-                                </a>
-                                <a className={styles.linkItem} href="http://localhost:3000/">
+                                </Link>
+                                <Link className={styles.linkItem} href="http://localhost:3001/">
                                     Đơn hàng của tôi
-                                </a>
-                                <a className={styles.linkItem} href="http://localhost:3000/">
+                                </Link>
+                                <Link className={styles.linkItem} href="http://localhost:3001/">
                                     Đăng xuất
-                                </a>
-                            </RowLayout>
+                                </Link>
+                            </div>
                         )}
                         trigger="mouseenter"
                         hideOnClick={false}
                         onShow={menuUserHoverIn}
                         onHide={menuUserHoverOut}
-                        delay = {[0, 100]}
+                        delay={[0, 100]}
                         offset={[-42, 0]}
                         interactive={true}
                     >
@@ -105,7 +105,7 @@ function Header() {
                     </Tippy>
                     <div className={`${styles.navInner} ${styles.cart}`}>
                         <FontAwesomeIcon icon={faCartShopping} size="xl" />
-                        {/* <a href="http://localhost:3000/">Giỏ Hàng</a> */}
+                        {/* <a href="http://localhost:3001/">Giỏ Hàng</a> */}
                         <div className={styles.cartAmount}>0</div>
                     </div>
                 </div>

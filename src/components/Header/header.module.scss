@@ -130,6 +130,7 @@
     .user {
         margin-right: 30px;
 
+
         &:hover {
             background-color: var(--lightGrey);
             cursor: pointer;
@@ -140,6 +141,17 @@
         }
     }
 
+}
+
+.userMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid rgb(225, 225, 225);
+    box-shadow: rgba(0, 0, 0, 0.28) 0px 6px 12px 0px;
 }
 
 .cart {

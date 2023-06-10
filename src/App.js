@@ -1,24 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { publicRoutes, privateRoutes } from "./Routes";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AllBooks from "./Pages/AllBooks/AllBooks";
+import Home from "./Pages/Home/Home";
+
 function App() {
-    // var Component = publicRoutes[0].component
     return (
-        <Router>
-            <div className="App">
-                <Routes>
-                    {
-                    // publicRoutes.map(function(publicRoutes, index){
-                    //     const Component = publicRoutes.component;
-                    //     return <Route key={index} path={publicRoutes.path} element={<Component />}></Route>;
-                    // })
-                    publicRoutes.map((publicRoutes, index) => {
-                        const Page = publicRoutes.page;
-                        return <Route key={index} path={publicRoutes.path} element={<Page />}></Route>;
-                    }) 
-                    }
-                </Routes>
-            </div>
-        </Router>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+                <Route path="/tat-ca" element={<AllBooks />}></Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 

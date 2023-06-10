@@ -1,0 +1,67 @@
+.wrapper {
+    height: 42px;    
+    background-color: rgba(10, 104, 255, 0.075);
+    // background-color: rgba(39, 39, 42, 0.05);
+    // background-color: #EDEDED;
+    border-bottom: 0.1px solid var(--lightGrey);
+}
+
+.menu {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    
+}
+
+.allBook {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    min-width: 200px;
+    background-color: white;
+    // border-radius: 8px;
+    border: 1px solid rgb(225, 225, 225);
+    box-shadow: rgba(0, 0, 0, 0.28) 0px 6px 12px 0px;
+}
+
+.category {
+
+}
+
+
+
+.inner {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    text-decoration: none;
+    color: var(--darkGrey);
+    font-size: var(--sizeText18);
+    font-weight: 400;
+    
+    &:hover {
+            color: var(--bluePrimary);
+            background-color: var(--lightBlue);
+        }
+}
+
+.linkItem {
+    display: block;
+    padding: 0 20px;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: var(--sizeText16);
+    line-height: 2.25;
+
+    &:hover {
+        background-color: var(--lightGrey);
+    }
+}
+
+.backgroundColor {
+    color: var(--bluePrimary);
+    background-color: var(--lightBlue);
+}
+
