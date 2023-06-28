@@ -12,6 +12,7 @@ function RowLayout({ setBorderRadius, setWidth, children }) {
             childrenElement = [...childrenElement, ReactDOMServer.renderToStaticMarkup(child)];
         }
     });
+    console.log(childrenElement)
     return (
         <div className={styles.wrapper} style={{ width: `${setWidth}`, borderRadius: `${setBorderRadius}` }}>
             {parse(childrenElement.join(""))}

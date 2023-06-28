@@ -3,12 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tippy from "@tippyjs/react/headless";
 
 import styles from "./header.module.scss";
-import RowLayout from "../RowLayout/RowLayout";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 function Header() {
-    const [showResultSearch, setShowResultSearch] = useState(true);
+    // const [showResultSearch, setShowResultSearch] = useState(true);
     const [showMenuUser, setShowRMenuUser] = useState(false);
+    let navigation = useNavigate()
+    let inputSearch = useRef()
+
     // const [isClick, setClickUser] = useState(false);
     var menuUserHoverIn = () => {
         let userElement = document.querySelector(`.${styles.user}`);
@@ -30,44 +32,52 @@ function Header() {
         // if (isClick) return false;
     };
 
-    var test2 = function () {
-        setShowResultSearch(false);
-    };
+    // var test2 = function () {
+    //     setShowResultSearch(false);
+    // };
+
+    let clickButtom = (event) => {
+        if(!inputSearch.current?.value) return;
+        navigation({
+            pathname: "/search",
+            search: `?q=${inputSearch.current?.value}`,
+        });
+    }
 
     return (
         <div className={styles.wrapper}>
             <div className={styles.header}>
                 <div className={styles.searchArea}>
-                    <a href="/">
+                    <Link to="/">
                         <div className={styles.logoMenu}></div>
-                    </a>
+                    </Link>
 
                     <div className={styles.search}>
                         <FontAwesomeIcon icon={faMagnifyingGlass} className={styles.icon} />
-                        <Tippy
+                        {/* <Tippy
                             visible={showResultSearch}
                             render={(attrs) => (
                                 <div style={{ width: "100%" }}>
                                     <RowLayout setBorderRadius="0" setWidth="940px" tabIndex="-1" {...attrs}>
-                                        {/* <a className={styles.linkItem} href="http://localhost:3001/">fsads</a>  */}
-                                        <a className={styles.linkItem} href="http://localhost:3001/">
+                                        <a className={styles.linkItem} to="http://localhost:3001/">
                                             sfasfd
                                         </a>
                                     </RowLayout>
                                 </div>
                             )}
-                            // trigger="click"
+                            trigger="click"
                             onClickOutside={test2}
                             interactive={true}
                             offset={"[0,0]"}
-                        >
+                        > */}
                             <input
                                 type="text"
                                 placeholder="Nhập tên sách hoặc tác giả muốn tìm kiếm"
                                 spellCheck="false"
+                                ref = {inputSearch}
                             />
-                        </Tippy>
-                        <button>Tìm kiếm</button>
+                        {/* </Tippy> */}
+                        <button onClick = {clickButtom}>Tìm kiếm</button>
                     </div>
                 </div>
                 <div className={styles.navArea}>

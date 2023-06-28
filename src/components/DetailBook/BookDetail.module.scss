@@ -1,0 +1,179 @@
+.wrapper {
+    width: var(--widthWebsite);
+    margin: auto;
+    gap: 1.5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.infoArea {
+    display: flex;
+    gap: 1.5px;
+    height: 580px;
+}
+
+.image {
+    background-color: white;
+    flex-basis: 36%;
+    padding: 16px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.info {
+    background-color: white;
+    flex-basis: 64%;
+    padding: 16px;
+
+    .author {
+        font-size: var(--sizeText14);
+        color: var(--bluePrimary);
+    }
+
+    .bookName {
+        font-size: var(--sizeText20);
+    }
+
+    .detailInfo {
+        margin-top: 25px;
+        margin-bottom: 5px;
+        font-size: var(--sizeText20);
+    }
+}
+
+.ratingArea {
+    .rating {
+        color: var(--yellow);
+    }
+
+    .numberRating,
+    .totalRating {
+        margin-left: 5px;
+    }
+
+    .totalSold {
+        margin-left: 10px;
+        position: relative;
+
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            border-left: 1px solid var(--darkGrey);
+            height: 16px;
+            left: -5px;
+            top: 2px;
+        }
+    }
+}
+
+.priceAndDiscount {
+    margin-top: 15px;
+    margin-left: 25px;
+    display: flex;
+    font-size: 3rem;
+
+    .salePrice {
+        color: red;
+
+        font-weight: 400;
+    }
+
+    .originalPrice {
+        align-self: center;
+        margin-left: 5px;
+        font-size: var(--sizeText14);
+        color: var(--darkGrey);
+        text-decoration: line-through;
+    }
+}
+
+table {
+    line-height: 15px;
+    border-collapse: collapse;
+    width: 100%;
+    // tr {
+    //     width: 250px;
+    // }
+
+    .title {
+        background-color: var(--lightGrey);
+        width: 220px;
+        padding: 10px;
+    }
+
+    .value {
+        padding: 10px;
+    }
+
+    .highlight {
+        background-color: rgba(39, 39, 42, 0.035);
+    }
+}
+
+.quantity {
+    p {
+        margin-bottom: 10px;
+    }
+
+    input {
+        outline: none;
+        width: 40px;
+        height: 30px;
+        border: 1px solid var(--lightGrey);
+        font-size: var(--sizeText16);
+        text-align: center;
+
+        &:focus {
+            border: 1px solid var(--bluePrimary);
+        }
+    }
+
+    button {
+        outline: none;
+        height: 30px;
+        width: 30px;
+        border: 1px solid var(--lightGrey);
+        background-color: white;
+        cursor: pointer;
+    }
+}
+
+.addToCart {
+    button {
+        margin-top: 15px;
+        width: 250px;
+        height: 50px;
+        outline: none;
+        cursor: pointer;
+        font-size: var(--sizeText20);
+        font-weight: 500;
+        border-radius: 4px;
+        border: none;
+        background-color: var(--red);
+        color: white;
+    }
+}
+
+.description {
+    background-color: white;
+    padding: 15px;
+
+    .title {
+        font-size: var(--sizeText20);
+        font-weight: 500;
+    }
+}
+
+.comment {
+    background-color: white;
+    padding: 15px;
+
+    .title {
+        font-size: var(--sizeText20);
+        font-weight: 500;
+    }
+}

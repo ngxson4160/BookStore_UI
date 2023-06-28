@@ -26,19 +26,19 @@ function Menu() {
                 <Tippy
                     render={(attrs) => (
                         <div className={styles.allBook} tabIndex="-1" {...attrs}>
-                            <Link className={styles.linkItem} to="/tat-ca/sach-tieng-anh">
+                            <Link className={styles.linkItem} to="/sach-tieng-anh">
                                 Sách tiếng Anh
                             </Link>
-                            <Link className={styles.linkItem} to="/tat-ca/truyen-tranh">
+                            <Link className={styles.linkItem} to="/truyen-tranh">
                                 Truyện tranh
                             </Link>
-                            <Link className={styles.linkItem} to="/tat-ca/tieu-thuyet">
+                            <Link className={styles.linkItem} to="/tieu-thuyet">
                                 Tiểu thuyết
                             </Link>
-                            <Link className={styles.linkItem} to="/tat-ca/khoa-học, ki-thuat">
+                            <Link className={styles.linkItem} to="/khoa-học, ki-thuat">
                                 Khoa học & kĩ thuật
                             </Link>
-                            <Link className={styles.linkItem} to="/tat-ca/kinh-te, xa-hoi">
+                            <Link className={styles.linkItem} to="/kinh-te, xa-hoi">
                                 Kinh tế & xã hội
                             </Link>
                         </div>
@@ -55,6 +55,12 @@ function Menu() {
                     </Link>
                 </Tippy>
                 <Link to="/" className={styles.inner}>
+                    Sách trẻ em
+                </Link>
+                <Link to="/" className={styles.inner}>
+                    Tiểu thuyết
+                </Link>
+                <Link to="/" className={styles.inner}>
                     Mới nhất
                 </Link>
                 <Link to="/" className={styles.inner}>
@@ -62,6 +68,9 @@ function Menu() {
                 </Link>
                 <Link to="/" className={styles.inner}>
                     Khuyến mại
+                </Link>
+                <Link to="/" className={styles.inner}>
+                    Về chúng tôi
                 </Link>
             </nav>
         </div>

@@ -1,0 +1,22 @@
+.wrapper {
+    .title {
+        height: 45px;
+        display:flex;
+        align-items: center;
+        margin-left: 340px;
+        font-size: var(--sizeText20);
+    }
+
+    .listProduct {
+        width: 1244.08px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .notFound {
+        margin-left: 340px;
+    }
+}

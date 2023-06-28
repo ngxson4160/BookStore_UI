@@ -17,23 +17,7 @@ function reducer(state, action) {
             }
             return {
                 ...state,
-                authorId:
-                    state.authorId === "" ? state.authorId + action.payload : state.authorId + "," + action.payload,
-            };
-        case actionType.DELETE_AUTHOR_ID:
-            let temp = state.authorId;
-            if (temp.indexOf(action.payload) !== 0) {
-                temp = temp.replace("," + action.payload, "");
-            }
-            if (temp.indexOf(action.payload) === 0 && temp.length === action.payload.length) {
-                temp = temp.replace(action.payload, "");
-            }
-            if (temp.indexOf(action.payload) === 0 && temp.length > action.payload.length) {
-                temp = temp.replace(action.payload + ",", "");
-            }
-            return {
-                ...state,
-                authorId: temp,
+                authorId: action.payload
             };
         case actionType.ADD_RATING:
             if (!action.payload) {

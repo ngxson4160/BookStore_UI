@@ -9,10 +9,30 @@ class BookService {
                     page,
                     author,
                     rating,
-                    price
+                    price,
                 },
             });
         } catch (error) {
+            console.log(error);
+        }
+        return data;
+    }
+
+    async getBookDetail(id) {
+        let data;
+        try {
+            data = await request.get(`books/${id}`);
+        } catch (error) {
+            console.log(error);
+        }
+        return data;
+    }
+
+    async search(keyword) {
+        let data;
+        try {
+            data= await request.get(`search/books?q=${keyword}`)
+        }catch (error) {
             console.log(error);
         }
         return data;

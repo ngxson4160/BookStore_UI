@@ -47,7 +47,7 @@ function Sorter({ currentPage, amountPage }) {
                     Bán chạy
                 </Link>
                 <Link onClick={SelectTypeSort} to="/">
-                    Đánh giá
+                    Mới nhất
                 </Link>
                 <Link onClick={SelectTypeSort} to="/">
                     Giá thấp đến cao
